@@ -39,9 +39,9 @@ export default function Home() {
         
         {/* Left side placeholder 2 */}
         <div 
-          className="fixed bottom-0 -translate-x-[10%] hidden xl:block pointer-events-none z-0"
+          className="fixed bottom-0 hidden xl:block pointer-events-none z-0"
           style={{
-            left: `calc(clamp(200px, 16vw, 256px) * 0.9 + clamp(200px, 16vw, 256px) + clamp(32px, 2vw, 48px))`,
+            left: `calc(clamp(200px, 16vw, 256px) + clamp(var(--gap-base, 32px), var(--gap-vw, 2vw), var(--gap-max, 48px)))`,
             width: 'clamp(200px, 16vw, 256px)',
             height: 'clamp(320px, 24vh, 400px)',
           }}
@@ -57,7 +57,7 @@ export default function Home() {
         <div 
           className="fixed bottom-0 hidden xl:block pointer-events-none z-0"
           style={{
-            left: `calc(clamp(200px, 16vw, 256px) * 1.8 + clamp(32px, 2vw, 48px) * 2)`,
+            left: `calc((clamp(200px, 16vw, 256px) + clamp(var(--gap-base, 32px), var(--gap-vw, 2vw), var(--gap-max, 48px))) * 2)`,
             width: 'clamp(200px, 16vw, 256px)',
             height: 'clamp(240px, 18vh, 280px)',
           }}
@@ -88,7 +88,7 @@ export default function Home() {
         <div 
           className="fixed bottom-0 hidden xl:block pointer-events-none z-0"
           style={{
-            right: `calc(clamp(200px, 16vw, 256px) * 1.8 + clamp(32px, 2vw, 48px) * 2)`,
+            right: `calc((clamp(200px, 16vw, 256px) + clamp(var(--gap-base, 32px), var(--gap-vw, 2vw), var(--gap-max, 48px))) * 2)`,
             width: 'clamp(200px, 16vw, 256px)',
             height: 'clamp(240px, 18vh, 280px)',
           }}
@@ -102,9 +102,9 @@ export default function Home() {
         
         {/* Right side placeholder 2 */}
         <div 
-          className="fixed bottom-0 translate-x-[10%] hidden xl:block pointer-events-none z-0"
+          className="fixed bottom-0 hidden xl:block pointer-events-none z-0"
           style={{
-            right: `calc(clamp(200px, 16vw, 256px) * 0.9 + clamp(200px, 16vw, 256px) + clamp(32px, 2vw, 48px))`,
+            right: `calc(clamp(200px, 16vw, 256px) + clamp(var(--gap-base, 32px), var(--gap-vw, 2vw), var(--gap-max, 48px)))`,
             width: 'clamp(200px, 16vw, 256px)',
             height: 'clamp(320px, 24vh, 400px)',
           }}
